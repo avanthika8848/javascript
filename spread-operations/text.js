@@ -1,0 +1,1 @@
+// spread operators in javascript is used to spread out the elements of an array or the properties of an object
