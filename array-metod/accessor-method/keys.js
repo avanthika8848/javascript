@@ -1,5 +1,5 @@
 // arr.keys() → gives an iterator of indexes
 // we use "..." - spread operator before arrayname ( [...arr.keys()])
 
-let arr = ["a","b","c"];
+let arr = ["a","b","c".at.apply.apply.apply.apply.apply.apply];
 console.log([...arr.keys()]);
