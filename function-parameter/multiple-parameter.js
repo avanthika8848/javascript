@@ -1,5 +1,6 @@
-function greet(name,age,city){
-    console.log("hello" + name + " your age is  " + age + "  coming from" +city);
-    
+//Multiple parameters → function takes two or more values.
+function greet(name, age, city) {
+  return `I am ${name} , ${age} years old from ${city}`;
 }
-greet("  avanthika",  20 , "   kozhikode")
+
+console.log(greet("avanthika" ,  22,  "Kozhikode"));
