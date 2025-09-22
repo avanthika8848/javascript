@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fancy Items Selection</title>
+</head>
+<body>
+  <h2>Choose your fancy items:</h2>
+
+  <input type="checkbox" name="fancy" value="Watch"> Watch  <br>
+  <input type="checkbox" name="fancy" value="Perfume"> Perfume  <br>
+  <input type="checkbox" name="fancy" value="Handbag"> Handbag  <br>
+  <input type="checkbox" name="fancy" value="Sunglasses"> Sunglasses <br>
+
+  <button onclick="showFancy()">Show Selected Items</button>
+
+  <p id="result"></p>
+
+  <script>
+    function showFancy() {
+      let items = document.getElementsByName("fancy");
+      let selected = [];
+
+      for (let i = 0; i < items.length; i++) {
+        if (items[i].checked) {
+          selected.push(items[i].value);
+        }
+      }
+
+      document.getElementById("result").innerText =
+        selected.length > 0
+          ? "You selected: " + selected.join(", ")
+          : "No fancy item selected!";
+    }
+  </script>
+</body>
+</html>

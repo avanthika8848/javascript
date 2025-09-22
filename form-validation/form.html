@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+
+        }
+        input{
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 300px;
+        }
+
+        .error{
+            color: red;
+            font-size: 14px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>Register form </h2>
+
+    <form id="myForm" onsubmit="">
+        <label>name</label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="new error"></span>
+
+        <label >email</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="emailerror"></span>
+
+        <label>phone number</label>
+        <input type="text" id="phone" name="name">
+        <span class="error" id="phone error"></span>
+
+
+        <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>
