@@ -1,0 +1,16 @@
+an eevents is an action or occurance that happens in the browser 
+eg:- a user clicking button 
+     mouse hover 
+     form Submit
+EventListener:-
+    an EventListener is a function in js that wait for an event to occure on html element and then execute code in response
+
+
+    why use :-
+    to make intract website
+
+    to spparate html in JavaScript
+
+
+    event handling:-
+           means waiting js code that will run whwn a specific event occure 

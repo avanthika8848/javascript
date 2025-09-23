@@ -23,7 +23,8 @@
     }
     h1 {
       text-align: center;
-      color: #ff69b4;
+      color: #6e073b;
+
     }
     .tab {
       display: flex;
@@ -79,18 +80,24 @@
 <body>
   <div class="container">
     <h1>Spa Client Intake Form</h1>
-    <div class="tab">
+    <!-- <div class="tab">
       <button class="tablinks active" onclick="openTab(event, 'ClientDetails')">Client Details</button>
       <button class="tablinks" onclick="openTab(event, 'EmergencyContact')">Emergency Contact Details</button>
       <button class="tablinks" onclick="openTab(event, 'ServicesCheckout')">Services & Checkout</button>
-    </div>
+    </div> -->
 
     <div id="ClientDetails" class="tabcontent" style="display: block;">
       <div class="form-group">
-        <label>Name</label>
-        <input type="text" id="firstName" placeholder="First Name"><br>
-        <br><input type="text" id="lastName" placeholder="Last Name">
-        <span class="error" id="nameError">Please enter both first and last name.</span>
+        <label>Name</label><br>
+        <input type="text" id="Name" placeholder="Name">
+        <span class="error" id="nameError"></span>
+        <input type="text" id="" placeholder="">
+        <span class="error" id=""></span>
+        <div class="row1">
+          <label><small>first name</small></label>
+          <label><small>lastName</small></label>
+
+        </div>
       </div>
       <div class="form-group">
         <label>Phone</label>
@@ -100,7 +107,7 @@
       <div class="form-group">
         <label>Email</label>
         <input type="email" id="email" placeholder="Email">
-        <span class="error" id="emailError">Please enter a valid email address.</span>
+        <span class="error" id="emailError">enter a valid email address.</span>
       </div>
       <div class="form-group">
         <label>Address</label>
